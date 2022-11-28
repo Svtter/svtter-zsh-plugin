@@ -24,6 +24,10 @@ function chore() {
     git add . && git commit -m "chore: $1"
 }
 
+function bump() {
+    feat "bump verison: " $1
+}
+
 
 # https://stackoverflow.com/questions/6916856/can-bash-show-a-functions-definition
 
@@ -76,3 +80,9 @@ function unsetdj () {
 0="${${(M)0:#/*}:-$PWD/$0}"
 
 source "${0:A:h}/grpc.sh"
+source "${0:A:h}/python/runtime.sh"
+
+# docker
+function build() {
+    docker build --build-arg netrc="$(cat ~/.netrc)" -t $1 .
+}
