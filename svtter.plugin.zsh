@@ -80,7 +80,7 @@ function unsetdj () {
 0="${${(M)0:#/*}:-$PWD/$0}"
 
 source "${0:A:h}/grpc.sh"
-source "${0:A:h}/python/runtime.sh"
+source "${0:A:h}/python/total.zsh"
 
 # docker
 function build() {
