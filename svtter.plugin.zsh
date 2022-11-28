@@ -1,8 +1,5 @@
 #!/bin/zsh
 
-# SCRIPT_DIR=$(cd $(dirname ${BASH_SOURCE[0]}); pwd)
-
-
 # git
 function ref() {
     git add . && git commit -m "refactor: $1"
@@ -31,7 +28,7 @@ function chore() {
 # https://stackoverflow.com/questions/6916856/can-bash-show-a-functions-definition
 
 alias ec="exec $SHELL"
-alias edit_quick="vim $ZSH_CUSTOM/plugins/svtter/svtter.plugin.zsh"
+alias eq="vim $ZSH_CUSTOM/plugins/svtter/svtter.plugin.zsh"
 
 
 function setpy() {
