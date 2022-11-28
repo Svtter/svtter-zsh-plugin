@@ -5,4 +5,5 @@ my bash scripts to make development convinient.
 
 ## Install
 
-`git clone $ZSH_CUSTOM/plugins/svtter`
+`git clone git@github.com:Svtter/svtter-zsh-plugin.git $ZSH_CUSTOM/plugins/svtter`
+
