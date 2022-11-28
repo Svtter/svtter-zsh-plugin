@@ -1,5 +1,12 @@
 #!/bin/zsh
 
+
+alias mkdir='mkdir -v'
+alias mv='mv -v'
+alias cp='cp -v'
+alias rm='rm -v'
+alias ln='ln -v'
+
 # git
 function ref() {
     git add . && git commit -m "refactor: $1"
