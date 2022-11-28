@@ -27,3 +27,13 @@ function vv() {
 }
 
 
+function py-upload() {
+	rm -rf dist
+    if [ "$1" == "pdm" ];
+    then
+        pdm build
+    else
+        poetry build
+    fi
+	python3 -m twine upload dist/* -r nexus
+}
