@@ -7,3 +7,8 @@ my bash scripts to make development convinient.
 
 `git clone git@github.com:Svtter/svtter-zsh-plugin.git $ZSH_CUSTOM/plugins/svtter`
 
+
+edit `~/.zshrc`:
+
+`plugin=(...... svtter)`
+
