@@ -1,3 +1,3 @@
 #!/bin/zsh
 
-source ~/.total.sh
+source .total.sh
