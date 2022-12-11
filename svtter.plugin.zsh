@@ -8,13 +8,33 @@ alias rm='rm -v'
 alias ln='ln -v'
 
 # git
+
+function checkgit() {
+  if [ -z $(git diff --cached --exit-code) ];
+  then
+      echo "IT IS CLEAN"
+  else
+      echo "PLEASE COMMIT YOUR CHANGE FIRST!!!"
+      git status
+  fi
+}
+
 function ref() {
     git add . && git commit -m "refactor: $1"
 
 }
 
 function feat() {
+  function unsafe_feat() {
     git add . && git commit -m "feat: $1"
+  }
+
+  if [ -z $(git diff --cached --exit-code) ];
+  then
+    unsafe_feat $1
+  else
+    git commit -m "feat: $1"
+  fi
 }
 
 
