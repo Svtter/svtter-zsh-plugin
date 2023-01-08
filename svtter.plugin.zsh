@@ -108,6 +108,7 @@ function unsetdj () {
 
 source "${0:A:h}/grpc.zsh"
 source "${0:A:h}/python/total.zsh"
+source "${0:A:h}/installer.zsh"
 
 # docker
 function build() {
