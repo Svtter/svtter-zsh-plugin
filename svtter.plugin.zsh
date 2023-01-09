@@ -114,3 +114,8 @@ source "${0:A:h}/installer.zsh"
 function build() {
     docker build --build-arg netrc="$(cat ~/.netrc)" -t $1 .
 }
+
+function update_svtter() {
+  cd ~/.oh-my-zsh/custom/plugins/svtter && git pull
+  cd -
+}
