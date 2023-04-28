@@ -1,6 +1,8 @@
 # Svtter scripts
 
-my bash scripts to make development convinient.
+My bash scripts to make development convinient.
+
+WARNING: `This repository is UNSTABLE`.
 
 
 ## Install

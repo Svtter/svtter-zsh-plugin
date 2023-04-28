@@ -112,8 +112,14 @@ function unsetdj () {
 
 source "${0:A:h}/grpc.zsh"
 source "${0:A:h}/python/total.zsh"
+source "${0:A:h}/installer.zsh"
 
 # docker
 function build() {
     docker build --build-arg netrc="$(cat ~/.netrc)" -t $1 .
+}
+
+function update_svtter() {
+  cd ~/.oh-my-zsh/custom/plugins/svtter && git pull
+  cd -
 }
