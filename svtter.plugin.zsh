@@ -9,7 +9,7 @@ alias ln='ln -v'
 
 # git
 
-function push_me() {
+function pushme() {
     git push -u origin $(git branch --show-current)
 }
 
