@@ -9,6 +9,10 @@ alias ln='ln -v'
 
 # git
 
+function push_me() {
+    git push -u origin $(git branch --show-current)
+}
+
 function checkgit() {
   if [ -z $(git diff --cached --exit-code) ];
   then
