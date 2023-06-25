@@ -29,7 +29,7 @@ function vv() {
 
 function py-upload() {
 	rm -rf dist
-    if [ "$1" == "pdm" ];
+    if [[ "$1" == "pdm" ]];
     then
         pdm build
     else
