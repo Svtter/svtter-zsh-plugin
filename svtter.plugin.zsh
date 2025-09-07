@@ -113,6 +113,7 @@ function unsetdj () {
 source "${0:A:h}/grpc.zsh"
 source "${0:A:h}/python/total.zsh"
 source "${0:A:h}/installer.zsh"
+source "${0:A:h}/claude_code.zsh"
 
 # docker
 function build() {
@@ -123,3 +124,5 @@ function update_svtter() {
   cd ~/.oh-my-zsh/custom/plugins/svtter && git pull
   cd -
 }
+
+
