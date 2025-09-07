@@ -368,3 +368,5 @@ attach/dictionary/*
 __pypackages__
 
 .coverage
+
+custom/*
